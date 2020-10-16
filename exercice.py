@@ -9,12 +9,16 @@ def reverse_data(data: list = None):
     # TODO: Demander 10 valeurs à l'utilisateur,
     # les stocker dans une structure de données,
     # et les retourner en ordre inverse, sans utiliser de liste.
-
+    lifo = LifoQueue()
     if data is None:
         pass  # Demander les valeurs ici
+    for i in range(10):
+        data = input('veuillez entrez un nombre: ')
+        lifo.put(data)
 
     reversed_data = None  # Stocker le résultat ici
-
+    while not lifo.empty():
+        print(lifo.get())
     return reversed_data
 
 
