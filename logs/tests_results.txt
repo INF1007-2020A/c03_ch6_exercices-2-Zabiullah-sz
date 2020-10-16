@@ -11,9 +11,9 @@ ERROR: test_reverse (__main__.TestExercice)
 Traceback (most recent call last):
   File "test_exercice.py", line 17, in test_reverse
     output = exercice.reverse_data(values)
-  File "/home/runner/work/c03_ch6_exercices-2-Zabiullah-sz/c03_ch6_exercices-2-Zabiullah-sz/exercice.py", line 12, in reverse_data
-    lifo = LifoQueue()
-NameError: name 'LifoQueue' is not defined
+  File "/home/runner/work/c03_ch6_exercices-2-Zabiullah-sz/c03_ch6_exercices-2-Zabiullah-sz/exercice.py", line 16, in reverse_data
+    data = input('veuillez entrez un nombre: ')
+EOFError: EOF when reading a line
 
 ======================================================================
 ERROR: test_string_and_structs (__main__.TestExercice)
@@ -45,7 +45,7 @@ FAIL: test_sort_queue (__main__.TestExercice)
 Traceback (most recent call last):
   File "test_exercice.py", line 83, in test_sort_queue
     'Mauvaise reponse'
-AssertionError: [] != [45, 57, 151, 178, 237, 254, 305, 325, 418[51 chars] 931] : Mauvaise reponse
+AssertionError: [] != [14, 15, 49, 142, 195, 275, 276, 360, 551,[50 chars] 999] : Mauvaise reponse
 
 ======================================================================
 FAIL: test_sort_stack (__main__.TestExercice)
@@ -53,7 +53,7 @@ FAIL: test_sort_stack (__main__.TestExercice)
 Traceback (most recent call last):
   File "test_exercice.py", line 68, in test_sort_stack
     'Mauvaise reponse'
-AssertionError: [] != [13, 16, 128, 156, 330, 331, 386, 392, 526[51 chars] 988] : Mauvaise reponse
+AssertionError: [] != [14, 20, 119, 207, 234, 238, 375, 416, 451[51 chars] 962] : Mauvaise reponse
 
 ----------------------------------------------------------------------
 Ran 6 tests in 0.002s
